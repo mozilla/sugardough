@@ -34,8 +34,13 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
+    # Project specific apps
     'sugardough.base',
 
+    # Third party apps
+    'django_nose',
+
+    # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,3 +139,5 @@ CSP_STYLE_SRC = (
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
