@@ -1,0 +1,3 @@
+# sha256: KF6L1zDAtv374jwy0pNr_7pAHyPKsTLocixovoDW8YI
+flake8
+

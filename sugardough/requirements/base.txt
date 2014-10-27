@@ -1,3 +1,4 @@
+# sha256: Z5_CSz6Fv1oHyi9tXEzfPUR3u7AvQ6ZUgzWVLMdbXSM
 Django==1.7.1
 
 
