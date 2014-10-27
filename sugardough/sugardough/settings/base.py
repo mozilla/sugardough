@@ -56,6 +56,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'csp.middleware.CSPMiddleware',
 )
 
 ROOT_URLCONF = 'sugardough.urls'
@@ -103,3 +104,33 @@ TEMPLATE_LOADERS = (
 JINGO_EXCLUDE_APPS = [
     'admin',
 ]
+
+# Django-CSP
+CSP_DEFAULT_SRC = (
+    "'self'",
+)
+CSP_FONT_SRC = (
+    "'self'",
+    'http://*.mozilla.net',
+    'https://*.mozilla.net'
+)
+CSP_IMG_SRC = (
+    "'self'",
+    'http://*.mozilla.net',
+    'https://*.mozilla.net',
+)
+CSP_SCRIPT_SRC = (
+    "'self'",
+    'http://www.mozilla.org',
+    'https://www.mozilla.org',
+    'http://*.mozilla.net',
+    'https://*.mozilla.net',
+)
+CSP_STYLE_SRC = (
+    "'self'",
+    "'unsafe-inline'",
+    'http://www.mozilla.org',
+    'https://www.mozilla.org',
+    'http://*.mozilla.net',
+    'https://*.mozilla.net',
+)

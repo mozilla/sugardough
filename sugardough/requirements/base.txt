@@ -22,3 +22,5 @@ gunicorn==19.1.1
 # sha256: J0AEZbGXarpNJ_vIdrgDkOsDh29BtE237st0xTgtUI8
 whitenoise==1.0.3
 
+# sha256: 0yV2uq13_dnmhZvpfCtqPBem9IQ2Q4nbcx8Gl7ehlmE
+django-csp==2.0.3
