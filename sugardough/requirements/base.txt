@@ -15,3 +15,10 @@ jingo==0.7
 
 # sha256: pOwa_1m5WhS0XrLiN2GgF56YMZ2lp-t2tW6ozce4ccM
 MarkupSafe==0.23
+
+# sha256: _7QRdX3jdNBcdZySmQjSOXxm47z2813uQabvnrhRSXs
+gunicorn==19.1.1
+
+# sha256: J0AEZbGXarpNJ_vIdrgDkOsDh29BtE237st0xTgtUI8
+whitenoise==1.0.3
+
