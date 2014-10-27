@@ -25,3 +25,8 @@ whitenoise==1.0.3
 # sha256: 0yV2uq13_dnmhZvpfCtqPBem9IQ2Q4nbcx8Gl7ehlmE
 django-csp==2.0.3
 
+# sha256: Vt7B6U0vrRPZAJoUC4FoCAhqed337fnrSTHIT2WrsSo
+pytz==2014.7
+
+
+
