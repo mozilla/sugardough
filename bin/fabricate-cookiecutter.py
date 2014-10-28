@@ -32,16 +32,17 @@ def global_replace(FROM, TO, dry_run=False):
     for lines in fi:
         print lines.replace(FROM, TO),
 
-    new_dirname = os.path.basename(DOUGHDIR_TEMP).replace('-temp', '')
-    new_dirname = new_dirname.replace(FROM, TO)
-    new_full_path = os.path.join(BASEDIR, new_dirname)
-    shutil.move(DOUGHDIR_TEMP, new_full_path)
-
-
 shutil.copytree(DOUGHDIR, DOUGHDIR_TEMP)
 
 with open(os.path.join(BASEDIR, 'cookiecutter.json')) as fp:
     cookiecutter = json.load(fp)
 
-for key, value in cookiecutter.items():
+for key, value in sorted(cookiecutter.items(), key=lambda x: len(x[1]), reverse=True):
     global_replace(value, '{{ cookiecutter.%s }}' % key)
+
+new_dirname = os.path.basename(DOUGHDIR_TEMP).replace('-temp', '')
+new_dirname = new_dirname.replace('sugardough', '{{ cookiecutter.project_name }}')
+new_full_path = os.path.join(BASEDIR, new_dirname)
+shutil.move(DOUGHDIR_TEMP, new_full_path)
+
+
