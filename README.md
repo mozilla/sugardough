@@ -4,6 +4,16 @@ Sugardough
 Sugardough is a web application template based on Django. Sugardouh is
 build using [Cookiecutter](https://github.com/audreyr/cookiecutter).
 
+Features:
+ * Django settings with environment variables, using [Decouple](https://github.com/henriquebastos/python-decouple)
+ * [Jinja2](http://jinja.pocoo.org/) template engine with [Jingo](http://jingo.readthedocs.org/)
+ * [Whitenoise](http://whitenoise.evans.io/)
+ * [Docker](https://docker.io/) ready, plus [Fig](http://fig.sh/) support.
+ * Sane [Flake8](http://flake8.readthedocs.org/en/2.2.3/) configuration.
+ * [NewRelic](https://newrelic.com/) ready.
+ * [Travis-CI](http://travis-ci.org/) ready.
+ * [Coveralls](http://coveralls.io/) ready.
+
 Create a sugardough project
 ---------------------------
 
