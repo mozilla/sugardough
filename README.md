@@ -1,11 +1,11 @@
 Sugardough
-----------
+==========
 
 Sugardough is a web application template based on Django. Sugardouh is
 build using [Cookiecutter](https://github.com/audreyr/cookiecutter).
 
 Create a sugardough project
-===========================
+---------------------------
 
 1. Get cookiecutter:
 
@@ -19,7 +19,7 @@ Create a sugardough project
 
 
 Cooking sugardough
-==================
+------------------
 
 To contribute to sugardough development:
 
