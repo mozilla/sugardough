@@ -28,5 +28,7 @@ django-csp==2.0.3
 # sha256: Vt7B6U0vrRPZAJoUC4FoCAhqed337fnrSTHIT2WrsSo
 pytz==2014.7
 
+# sha256: gRBAtkfl1WhvhNtBXv1pfmJQAIsRK2kJunesBZ4UDHQ
+MySQL-python==1.2.5
 
 
