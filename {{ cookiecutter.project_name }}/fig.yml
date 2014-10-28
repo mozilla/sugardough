@@ -1,0 +1,16 @@
+db:
+  image: mysql
+  environment:
+    - MYSQL_DATABASE={{ cookiecutter.project_db }}
+web:
+  build: .
+  ports:
+    - "8000:8000"
+  volumes:
+    - .:/app
+  links:
+    - db
+  environment:
+    - DATABASE_URL=mysql://root@db/{{ cookiecutter.project_db }}
+  command:
+    python manage.py runserver 0.0.0.0:8000
