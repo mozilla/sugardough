@@ -1,16 +1,8 @@
 # sha256: KF6L1zDAtv374jwy0pNr_7pAHyPKsTLocixovoDW8YI
 flake8==2.2.5
 
-# sha256: i0rs7GCOZHVJjIhbYLFZunp9iO_s98Us4pW7-11k1wQ
+# sha256: ovga_j7KXIsujPTsNVGP0AejkjF3DmfmwsT5vSuFeq4
 ipython==2.3.0
 
 # sha256: DUoz845megyA7BpaDkaP5Y5c3GHLj0B3sQJLhf57cRc
 ipdb==0.8
-
-# sha256: drxjpOLV5aDfd8p9GPD1bixGz7YrcRA7qSqSx5-rHgM
-nose==1.3.4
-
-# sha256: mq4WtWKGak3apeiXhymrrbvtVEco2I4LnJr3sx3Qcu0
-django-nose==1.2
-
-
