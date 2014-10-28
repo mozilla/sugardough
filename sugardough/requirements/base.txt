@@ -37,3 +37,5 @@ django-nose==1.2
 # sha256: gRBAtkfl1WhvhNtBXv1pfmJQAIsRK2kJunesBZ4UDHQ
 MySQL-python==1.2.5
 
+# sha256: Pf5ngrqy-6UH0DYMMzNhTp0upGWyAS05qeykiXG9qtw
+newrelic==2.36.0.30
