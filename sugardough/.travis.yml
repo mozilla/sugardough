@@ -6,6 +6,10 @@ before_script:
 install:
   - pip install -r requirements/base.txt
   - pip install -r requirements/dev.txt
+  - pip install coveralls
 env:
   - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=mysql://root@localhost/sugardough_db
-script: python manage.py test
+script:
+  coverage run manage.py test
+after_success:
+  coveralls
