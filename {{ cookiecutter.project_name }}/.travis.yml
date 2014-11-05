@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+before_script:
+  - mysql -e 'create database {{ cookiecutter.project_db }} character set utf8;'
+install:
+  - pip install -r requirements/base.txt
+  - pip install -r requirements/dev.txt
+env:
+  - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=mysql://root@localhost/{{ cookiecutter.project_db }}
+script: python manage.py test
