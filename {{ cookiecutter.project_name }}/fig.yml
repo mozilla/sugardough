@@ -1,6 +1,7 @@
 db:
-  image: mysql
+  image: mysql:5
   environment:
+    - MYSQL_ROOT_PASSWORD=passwd
     - MYSQL_DATABASE={{ cookiecutter.project_db }}
 web:
   build: .
@@ -11,6 +12,6 @@ web:
   links:
     - db
   environment:
-    - DATABASE_URL=mysql://root@db/{{ cookiecutter.project_db }}
+    - DATABASE_URL=mysql://root:passwd@db/{{ cookiecutter.project_db }}
   command:
     python manage.py runserver 0.0.0.0:8000
