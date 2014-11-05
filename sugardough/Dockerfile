@@ -7,3 +7,7 @@ WORKDIR /app
 
 RUN peep install -r requirements/base.txt
 RUN peep install -r requirements/dev.txt
+
+EXPOSE 80
+
+CMD ["gunicorn", "sugardough.wsgi:application", "-b 0.0.0.0:80", "-w 2", "--log-file", "-"]
