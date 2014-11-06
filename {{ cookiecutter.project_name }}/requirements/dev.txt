@@ -6,3 +6,9 @@ ipython==2.3.0
 
 # sha256: DUoz845megyA7BpaDkaP5Y5c3GHLj0B3sQJLhf57cRc
 ipdb==0.8
+
+# sha256: 0UXkOs2Dxbos77J2EH6Wb-YzXbAmWnoLSxCirbhM0m0
+Sphinx==1.2.3
+
+# sha256: x9txeBCraWX2bIzwOYqYydjfmC2jm0zX8WKRHriVlvo
+docutils==0.12

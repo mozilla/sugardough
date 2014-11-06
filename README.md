@@ -13,6 +13,7 @@ Features:
  * [NewRelic](https://newrelic.com/) ready.
  * [Travis-CI](http://travis-ci.org/) ready.
  * [Coveralls](http://coveralls.io/) ready.
+ * [Sphinx](http://sphinx-doc.org/) support and [ReadTheDocs](https://readthedocs.org/) ready.
 
 Create a sugardough project
 ---------------------------
