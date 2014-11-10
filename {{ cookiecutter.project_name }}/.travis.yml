@@ -10,6 +10,6 @@ install:
 env:
   - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=mysql://root@localhost/{{ cookiecutter.project_db }}
 script:
-  coverage run manage.py test
+  flake8 && coverage run manage.py test
 after_success:
   coveralls
