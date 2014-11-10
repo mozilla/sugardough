@@ -1,7 +1,7 @@
-# sha256: PeYucc4s-83stuNEytBJSFBshBDqXG6rFcjzsxuKwcA
+# sha256: Z5_CSz6Fv1oHyi9tXEzfPUR3u7AvQ6ZUgzWVLMdbXSM
 Django==1.7.1
 
-# sha256: 8uJz7TSsu1YJYtXPEpF5NtjfAil98JvTCJuFRtRYQTg
+# sha256: ygF2j97N4TQwHzFwdDIm9g7f9cOTXxJDc3jr2RFQY1M
 dj-database-url==0.3.0
 
 # sha256: ufv3R_qOcR0zDy9Da5suz17tnrZ6Y3yoGrzRHCq-3sg
@@ -16,10 +16,10 @@ jingo==0.7
 # sha256: pOwa_1m5WhS0XrLiN2GgF56YMZ2lp-t2tW6ozce4ccM
 MarkupSafe==0.23
 
-# sha256: gnFVEftiRvrUumbYEuuTQWroNxtGT6iL84Z8nBd9qhQ
+# sha256: _7QRdX3jdNBcdZySmQjSOXxm47z2813uQabvnrhRSXs
 gunicorn==19.1.1
 
-# sha256: 0uFqgiSFnrEgEqn6mawa70J48KNhc_79YWzbKutrh-c
+# sha256: J0AEZbGXarpNJ_vIdrgDkOsDh29BtE237st0xTgtUI8
 whitenoise==1.0.3
 
 # sha256: 0yV2uq13_dnmhZvpfCtqPBem9IQ2Q4nbcx8Gl7ehlmE
