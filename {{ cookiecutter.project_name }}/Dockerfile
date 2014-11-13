@@ -7,8 +7,6 @@ WORKDIR /app
 RUN ./bin/peep.py install -r requirements/base.txt
 RUN ./bin/peep.py install -r requirements/dev.txt
 
-RUN ./manage.py collectstatic --noinput -c
-
 EXPOSE 80
 
-CMD ["gunicorn", "{{ cookiecutter.project_name }}.wsgi:application", "-b 0.0.0.0:80", "-w 2", "--log-file", "-"]
+CMD ["./bin/run-docker.sh"]
