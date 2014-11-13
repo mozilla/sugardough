@@ -42,3 +42,6 @@ To contribute to sugardough development:
  5. Run ./bin/fabricate-cookiecutter.py
  6. Git commit changes. Note both "sugardough" and "{{ cookiecutter.project_name }}" directories must be committed.
  7. Pull request!
+
+
+Check sugardough dependencies on [VersionEye](https://www.versioneye.com/user/projects/5464b1a74de5efb2d7000002)
