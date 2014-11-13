@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf "{{ cookiecutter.project_name }}"
+./bin/fabricate-cookiecutter.py
+git add "{{ cookiecutter.project_name }}"
