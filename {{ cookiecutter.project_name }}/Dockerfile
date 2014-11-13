@@ -1,5 +1,5 @@
 FROM debian
-RUN apt-get update && apt-get install -y python python-pip python-dev mysql-client libmysqlclient-dev
+RUN apt-get update && apt-get install -y python python-pip python-dev libpq-dev mysql-client libmysqlclient-dev
 
 ADD . /app
 WORKDIR /app

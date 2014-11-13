@@ -1,8 +1,5 @@
 db:
-  image: mysql:5
-  environment:
-    - MYSQL_ROOT_PASSWORD=passwd
-    - MYSQL_DATABASE=sugardough_db
+  image: postgres:9.1
 web:
   build: .
   ports:
@@ -12,6 +9,7 @@ web:
   links:
     - db
   environment:
-    - DATABASE_URL=mysql://root:passwd@db/sugardough_db
+    - PYTHONDONTWRITEBYTECODE=1
+    - DATABASE_URL=postgres://postgres@db/postgres
   command:
     python manage.py runserver 0.0.0.0:8000
