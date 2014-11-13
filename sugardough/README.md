@@ -17,7 +17,7 @@ Docker for deploying to production
 -----------------------------------
 
 1. Add your project in [Docker Registry](https://registry.hub.docker.com/) as [Automated Build](http://docs.docker.com/docker-hub/builds/)
-2. Prepare a 'env' file with all the varibles needed by dev, stage or production.
+2. Prepare a 'env' file with all the variables needed by dev, stage or production.
 3. Run the image:
 
     docker run --env-file env -p 80:80 mozilla/sugardough
