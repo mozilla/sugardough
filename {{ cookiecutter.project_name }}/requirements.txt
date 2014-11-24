@@ -87,9 +87,11 @@ ipdb==0.8
 Sphinx==1.2.3
 
 # sha256: PYBK7mdyHzjoQO-jo65SiYMo5kcJJZNB8qiQHVvwHNQ
+# sha256: Dyn1RPbQN5ifoMdymp6rfk2OpQ1vDvNzY_RydWwe3KY
 sphinx-rtd-theme==0.1.6
 
 # sha256: XinOsvZKY-HOMBr0x0vrJ7WmYeWGPQBFT1mUC6JNc50
+# sha256: OQDKtkuxi2YYkSgARVAePxoFoeyZp1rrLtAmkdB4JcI
 sphinx-autobuild==0.3.0
 
 # sha256: x9txeBCraWX2bIzwOYqYydjfmC2jm0zX8WKRHriVlvo
