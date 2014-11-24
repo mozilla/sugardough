@@ -43,5 +43,8 @@ To contribute to sugardough development:
  6. Git commit changes. Note both "sugardough" and "{{ cookiecutter.project_name }}" directories must be committed.
  7. Pull request!
 
+Alternativelly you can use the pre-commit git hook to do steps 4 and 5 automagically every time you commit. Just link `./git-hooks/pre-commit` to `./.git/hooks/pre-commit`:
+
+ `$ ln -s ../../git-hooks/pre-commit .git/hooks/pre-commit`
 
 Check sugardough dependencies on [VersionEye](https://www.versioneye.com/user/projects/5464b1a74de5efb2d7000002)
