@@ -4,8 +4,7 @@ python:
 before_script:
   - mysql -e 'create database sugardough_db character set utf8;'
 install:
-  - pip install -r requirements/base.txt
-  - pip install -r requirements/dev.txt
+  - pip install -r requirements.txt
   - pip install coveralls
 env:
   - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=mysql://root@localhost/sugardough_db
