@@ -7,8 +7,7 @@ RUN apt-get update && apt-get install -y python python-pip python-dev libpq-dev 
 ADD . /app
 WORKDIR /app
 
-RUN ./bin/peep.py install -r requirements/base.txt
-RUN ./bin/peep.py install -r requirements/dev.txt
+RUN ./bin/peep.py install -r requirements.txt
 
 EXPOSE 80
 
