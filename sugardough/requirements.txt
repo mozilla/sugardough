@@ -97,3 +97,7 @@ sphinx-autobuild==0.3.0
 # sha256: x9txeBCraWX2bIzwOYqYydjfmC2jm0zX8WKRHriVlvo
 docutils==0.12
 
+# sha256: XgOeHUDSMpge1YkUttGsLkU6foPd6iLvnz7q3QHeRcs
+# sha256: ZoyOZluTX2I4WcEyE-G8mzP9Gf7sTbfC-OhVwcjFWdc
+# sha256: fydQ9H4cA_ffSGbTdhm4B0_8HTIYI7taNRMC_k3SC2c
+Pygments==2.0.1
