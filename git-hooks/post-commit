@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -rf "{{ cookiecutter.project_name }}"
+./bin/fabricate-cookiecutter.py
+git diff --exit-code -- "{{ cookiecutter.project_name }}" > /dev/null
+rc=$?
+if [[ $rc -eq 1 ]];
+then
+  git add "{{ cookiecutter.project_name }}"
+  git commit --amend --no-edit
+fi;
