@@ -3,6 +3,7 @@ import fileinput
 import shutil
 import os
 import json
+import subprocess
 
 BASEDIR = os.path.dirname(os.path.dirname(__file__))
 DOUGHDIR = os.path.join(BASEDIR, 'sugardough')
@@ -32,7 +33,10 @@ def global_replace(FROM, TO, dry_run=False):
     for lines in fi:
         print lines.replace(FROM, TO),
 
-shutil.copytree(DOUGHDIR, DOUGHDIR_TEMP)
+subprocess.call(
+    'git archive --format=tar --prefix=sugardough-temp/ HEAD:sugardough | tar xf -',
+    shell=True
+)
 
 with open(os.path.join(BASEDIR, 'cookiecutter.json')) as fp:
     cookiecutter = json.load(fp)
