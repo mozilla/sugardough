@@ -1,6 +1,9 @@
 FROM debian
 RUN apt-get update && apt-get install -y python python-pip python-dev libpq-dev mysql-client libmysqlclient-dev gettext
 
+# Using PIL or Pillow? You probably want to uncomment next line
+# RUN apt-get update && apt-get install -y libjpeg8-dev
+
 ADD . /app
 WORKDIR /app
 
