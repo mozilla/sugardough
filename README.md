@@ -15,6 +15,8 @@ Features:
  * [Coveralls](http://coveralls.io/) ready.
  * [Sphinx](http://sphinx-doc.org/) support and [ReadTheDocs](https://readthedocs.org/) ready.
 
+[![Requirements Status](https://requires.io/github/glogiotatidis/sugardough/requirements.svg?branch=master)](https://requires.io/github/glogiotatidis/sugardough/requirements/?branch=master)
+
 Create a sugardough project
 ---------------------------
 
@@ -46,5 +48,3 @@ To contribute to sugardough development:
 Alternativelly you can use the pre-commit git hook to do steps 4 and 5 automagically every time you commit. Just link `./git-hooks/pre-commit` to `./.git/hooks/pre-commit`:
 
  `$ ln -s ../../git-hooks/pre-commit .git/hooks/pre-commit`
-
-Check sugardough dependencies on [VersionEye](https://www.versioneye.com/user/projects/5464b1a74de5efb2d7000002)
