@@ -5,7 +5,7 @@ sugardough
 Docker for development
 ----------------------
 
-0. Make sure you have [docker](https://docker.io) and [pip](https://pypi.python.org/pypi/pip/1.5.6)
+0. Make sure you have [docker](https://docker.io) and [fig](https://pypi.python.org/pypi/fig)
 1. fig up
 
 Note that this will probably not work with
@@ -21,3 +21,4 @@ Docker for deploying to production
 3. Run the image:
 
     docker run --env-file env -p 80:80 mozilla/sugardough
+
