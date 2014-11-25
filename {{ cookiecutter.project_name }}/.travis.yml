@@ -1,13 +1,15 @@
 language: python
 python:
   - "2.7"
+addons:
+  postgresql: "9.1"
 before_script:
-  - mysql -e 'create database {{ cookiecutter.project_db }} character set utf8;'
+  - psql -c 'create database {{ cookiecutter.project_db }};' -U postgres
 install:
   - pip install -r requirements.txt
   - pip install coveralls
 env:
-  - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=mysql://root@localhost/{{ cookiecutter.project_db }}
+  - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=postgres://root@localhost/{{ cookiecutter.project_db }}
 script:
   flake8 {{ cookiecutter.project_name }} && coverage run manage.py test
 after_success:
