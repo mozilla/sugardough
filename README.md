@@ -1,7 +1,7 @@
 Sugardough
 ==========
 
-Sugardough is a web application template based on Django. Sugardouh is
+Sugardough is a web application template based on Django. Sugardough is
 build using [Cookiecutter](https://github.com/audreyr/cookiecutter).
 
 Features:
@@ -14,6 +14,7 @@ Features:
  * [Travis-CI](http://travis-ci.org/) ready.
  * [Coveralls](http://coveralls.io/) ready.
  * [Sphinx](http://sphinx-doc.org/) support and [ReadTheDocs](https://readthedocs.org/) ready.
+ * [peep](https://github.com/erikrose/peep) ready.
 
 [![Requirements Status](https://requires.io/github/glogiotatidis/sugardough/requirements.svg?branch=master)](https://requires.io/github/glogiotatidis/sugardough/requirements/?branch=master)
 
