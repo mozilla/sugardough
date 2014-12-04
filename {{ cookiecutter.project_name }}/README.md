@@ -1,6 +1,7 @@
 {{ cookiecutter.project_name }}
 ==========
 
+[![Build Status](https://travis-ci.org/mozilla/{{ cookiecutter.project_name }}.svg?branch=master)](https://travis-ci.org/mozilla/{{ cookiecutter.project_name }})
 
 Docker for development
 ----------------------
@@ -21,4 +22,3 @@ Docker for deploying to production
 3. Run the image:
 
     docker run --env-file env -p 80:80 mozilla/{{ cookiecutter.project_name }}
-
