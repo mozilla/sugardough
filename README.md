@@ -16,7 +16,7 @@ Features:
  * [Sphinx](http://sphinx-doc.org/) support and [ReadTheDocs](https://readthedocs.org/) ready.
  * [peep](https://github.com/erikrose/peep) ready.
 
-[![Requirements Status](https://requires.io/github/glogiotatidis/sugardough/requirements.svg?branch=master)](https://requires.io/github/glogiotatidis/sugardough/requirements/?branch=master)
+[![Requirements Status](https://requires.io/github/mozilla/sugardough/requirements.svg?branch=master)](https://requires.io/github/glogiotatidis/sugardough/requirements/?branch=master)
 
 Create a sugardough project
 ---------------------------
@@ -27,7 +27,7 @@ Create a sugardough project
 
 2. Run cookiecutter with sugardough template
 
-    $ cookiecutter https://github.com/glogiotatidis/sugardough
+    $ cookiecutter https://github.com/mozilla/sugardough
 
 3. Done!
 
@@ -38,8 +38,8 @@ Cooking sugardough
 To contribute to sugardough development:
 
  1. Clone this repository
- 2. Make your changes in [sugardough](https://github.com/glogiotatidis/sugardough/tree/master/sugardough) directory
- 3. Update [cookiecutter.json](https://github.com/glogiotatidis/sugardough/blob/master/cookiecutter.json) with new variables if needed.
+ 2. Make your changes in [sugardough](https://github.com/mozilla/sugardough/tree/master/sugardough) directory
+ 3. Update [cookiecutter.json](https://github.com/mozilla/sugardough/blob/master/cookiecutter.json) with new variables if needed.
  4. Delete existing template directory:
     $ rm -rf "{{ cookiecutter.project_name }}"
  5. Run ./bin/fabricate-cookiecutter.py
