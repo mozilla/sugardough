@@ -4,13 +4,12 @@ python:
 addons:
   postgresql: "9.1"
 before_script:
-  - psql -c 'create database {{ cookiecutter.project_db }};' -U postgres
+  - createdb {{ cookiecutter.project_db }}
 install:
-  - pip install -r requirements.txt
-  - pip install coveralls
+  - pip install tox
 env:
-  - DEBUG=False SECRET_KEY='FOO' ALLOWED_HOSTS=localhost, DATABASE_URL=postgres://root@localhost/{{ cookiecutter.project_db }}
+  - TOX_ENV=flake8
+  - TOX_ENV=docs
+  - TOX_ENV=tests
 script:
-  flake8 {{ cookiecutter.project_name }} && coverage run manage.py test
-after_success:
-  coveralls
+  - tox -e $TOX_ENV
