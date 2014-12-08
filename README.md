@@ -41,8 +41,8 @@ To contribute to sugardough development:
  2. Make your changes in [sugardough](https://github.com/mozilla/sugardough/tree/master/sugardough) directory
  3. Update [cookiecutter.json](https://github.com/mozilla/sugardough/blob/master/cookiecutter.json) with new variables if needed.
  4. Delete existing template directory:
-    $ rm -rf "{{ cookiecutter.project_name }}"
- 5. Run ./bin/fabricate-cookiecutter.py
+    `$ rm -rf "{{ cookiecutter.project_name }}"`
+ 5. Run `./bin/fabricate-cookiecutter.py`
  6. Git commit changes. Note both "sugardough" and "{{ cookiecutter.project_name }}" directories must be committed.
  7. Pull request!
 
@@ -61,7 +61,7 @@ edit the generated `requirements.txt` file and remove the lines about
 `psycopg2` then use `peep` to add the version of `MySQL-python` you want to
 use. You will also need to edit the `.travis.yml` file accordingly.
 
-* If you don't want to use `Jinja2`, remove the lines about `jingo`,
+* If you don't want to use **Jinja2**, remove the lines about `jingo`,
 `MarkupSafe` and `Jinja2` in the `requirements.txt` file. You will also
 need to edit the file `settings/base.py` and remove
 the `TEMPLATE_LOADERS` and the `JINGO_EXCLUDE_APPS` setting.
