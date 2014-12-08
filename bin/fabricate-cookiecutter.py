@@ -48,5 +48,3 @@ new_dirname = os.path.basename(DOUGHDIR_TEMP).replace('-temp', '')
 new_dirname = new_dirname.replace('sugardough', '{{ cookiecutter.project_name }}')
 new_full_path = os.path.join(BASEDIR, new_dirname)
 shutil.move(DOUGHDIR_TEMP, new_full_path)
-
-
