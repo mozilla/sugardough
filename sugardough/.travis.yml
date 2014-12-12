@@ -6,10 +6,12 @@ addons:
 before_script:
   - createdb sugardough_db
 install:
-  - pip install tox
+  - pip install tox coveralls
 env:
   - TOX_ENV=flake8
   - TOX_ENV=docs
   - TOX_ENV=tests
 script:
   - tox -e $TOX_ENV
+after_success:
+  - coveralls

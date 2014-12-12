@@ -1,7 +1,34 @@
 sugardough
 ==========
 
-[![Build Status](https://travis-ci.org/mozilla/sugardough.svg?branch=master)](https://travis-ci.org/mozilla/sugardough)
+[![Build Status](https://img.shields.io/travis/mozilla/sugardough/master.svg)](https://travis-ci.org/mozilla/sugardough)
+
+[![Coverage status](https://img.shields.io/coveralls/mozilla/sugardough/master.svg)](https://coveralls.io/r/mozilla/sugardough)
+
+Run the tests
+-------------
+
+There's a sample test in `sugardough/base/tests.py` for your convenience, that
+you can run using the following command:
+
+    python manage.py test
+
+If you want to run the full suite, with flake8 and coverage, you may use
+[tox](https://testrun.org/tox/latest/). This will run the tests the same way
+they are run by [travis](https://travis-ci.org)):
+
+    pip install tox
+    tox
+
+The `.travis.yml` file will also run [coveralls](https://coveralls.io) by
+default.
+
+If you want to benefit from Travis and Coveralls, you will need to activate
+them both for your project.
+
+Oh, and you might want to change the "Build Status" and "Coverage Status" links
+at the top of this file to point to your own travis and coveralls accounts.
+
 
 Docker for development
 ----------------------
