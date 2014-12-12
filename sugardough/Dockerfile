@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:wheezy
 RUN apt-get update && apt-get install -y python python-pip python-dev libpq-dev mysql-client libmysqlclient-dev gettext
 
 # Using PIL or Pillow? You probably want to uncomment next line
