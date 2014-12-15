@@ -16,7 +16,10 @@ Features:
  * [Sphinx](http://sphinx-doc.org/) support and [ReadTheDocs](https://readthedocs.org/) ready.
  * [peep](https://github.com/erikrose/peep) ready.
 
-[![Requirements Status](https://requires.io/github/mozilla/sugardough/requirements.svg?branch=master)](https://requires.io/github/mozilla/sugardough/requirements/?branch=master)
+[![Requirements Status](https://img.shields.io/requires/github/mozilla/sugardough.svg)](https://requires.io/github/mozilla/sugardough/requirements/?branch=master)
+[![Build Status](https://img.shields.io/travis/mozilla/sugardough/master.svg)](https://travis-ci.org/mozilla/sugardough)
+[![Coverage status](https://img.shields.io/coveralls/mozilla/sugardough/master.svg)](https://coveralls.io/r/mozilla/sugardough)
+
 
 Create a sugardough project
 ---------------------------
