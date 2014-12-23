@@ -106,10 +106,6 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
 )
 
-JINGO_EXCLUDE_APPS = [
-    'admin',
-]
-
 # Django-CSP
 CSP_DEFAULT_SRC = (
     "'self'",

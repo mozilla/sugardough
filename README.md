@@ -65,9 +65,9 @@ edit the generated `requirements.txt` file and remove the lines about
 use. You will also need to edit the `.travis.yml` file accordingly.
 
 * If you don't want to use **Jinja2**, remove the lines about `jingo`,
-`MarkupSafe` and `Jinja2` in the `requirements.txt` file. You will also
-need to edit the file `settings/base.py` and remove
-the `TEMPLATE_LOADERS` and the `JINGO_EXCLUDE_APPS` setting.
+`MarkupSafe` and `Jinja2` in the `requirements.txt` file. You will
+also need to edit the file `settings/base.py` and remove the
+`TEMPLATE_LOADERS` setting.
 
 * if you want to use **pytest instead of nose**, remove `nose` and
 `django-nose` from `requirements.txt` then add in `pytest`, `py`,
