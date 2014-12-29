@@ -36,10 +36,6 @@ Docker for development
 0. Make sure you have [docker](https://docker.io) and [fig](https://pypi.python.org/pypi/fig)
 1. fig up
 
-Note that this will probably not work with
-[boot2docker](https://github.com/boot2docker/boot2docker), as the
-volumes will not get mounted.
-
 
 Docker for deploying to production
 -----------------------------------
