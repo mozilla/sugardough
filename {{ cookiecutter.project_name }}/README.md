@@ -45,3 +45,15 @@ Docker for deploying to production
 3. Run the image:
 
     docker run --env-file env -p 80:80 mozilla/{{ cookiecutter.project_name }}
+
+
+NewRelic Monitoring
+-------------------
+
+A newrelic.ini file is already included. To enable NewRelic monitoring
+add two enviroment variables:
+
+ - NEW_RELIC_LICENSE_KEY
+ - NEW_RELIC_APP_NAME
+
+See the [full list of supported environment variables](https://docs.newrelic.com/docs/agents/python-agent/installation-configuration/python-agent-configuration#environment-variables).
