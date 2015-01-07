@@ -2,7 +2,7 @@
 
 from uuid import uuid4
 
-print 'Generating development .env file'
+print('Generating development .env file')
 
 variables = {
     'DEBUG': 'True',
