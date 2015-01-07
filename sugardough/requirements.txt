@@ -4,10 +4,10 @@
 peep==2.0
 
 # TarGZ
-# sha256: PeYucc4s-83stuNEytBJSFBshBDqXG6rFcjzsxuKwcA
+# sha256: McbDwin4wEs76H5q_DSSkDtX7I8RiKR7auFg2Qz2U8g
 # Wheel
-# sha256: Z5_CSz6Fv1oHyi9tXEzfPUR3u7AvQ6ZUgzWVLMdbXSM
-Django==1.7.1
+# sha256: sihx7cnd8-V7GJicPH6RdLTBaNx7jb4_MdQQGnO_IAY
+Django==1.7.2
 
 # TarGZ
 # sha256: 8uJz7TSsu1YJYtXPEpF5NtjfAil98JvTCJuFRtRYQTg
