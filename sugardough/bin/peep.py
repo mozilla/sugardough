@@ -27,9 +27,11 @@ from os import listdir
 from os.path import join, basename, splitext, isdir
 from pickle import dumps, loads
 import re
+import sys
 from shutil import rmtree, copy
 from sys import argv, exit
 from tempfile import mkdtemp
+import traceback
 try:
     from urllib2 import build_opener, HTTPHandler, HTTPSHandler, HTTPError
 except ImportError:
@@ -71,11 +73,14 @@ except ImportError:
     except ImportError:
         from pip.util import url_to_filename as url_to_path  # 0.6.2
 from pip.index import PackageFinder, Link
-from pip.log import logger
+try:
+    from pip.log import logger
+except ImportError:
+    from pip import logger  # 6.0
 from pip.req import parse_requirements
 
 
-__version__ = 2, 0, 0
+__version__ = 2, 1, 0
 
 
 ITS_FINE_ITS_FINE = 0
@@ -231,6 +236,7 @@ class EmptyOptions(object):
     """
     default_vcs = None
     skip_requirements_regex = None
+    isolated_mode = False
 
 
 def memoize(func):
@@ -727,8 +733,18 @@ def downloaded_reqs_from_path(path, argv):
     :arg argv: The commandline args, starting after the subcommand
 
     """
-    return [DownloadedReq(req, argv) for req in
-            parse_requirements(path, options=EmptyOptions())]
+    try:
+        return [DownloadedReq(req, argv) for req in
+                parse_requirements(path, options=EmptyOptions())]
+    except TypeError:
+        # session is a required kwarg as of pip 6.0 and will raise
+        # a TypeError if missing. It needs to be a PipSession instance,
+        # but in older versions we can't import it from pip.download
+        # (nor do we need it at all) so we only import it in this except block
+        from pip.download import PipSession
+        return [DownloadedReq(req, argv) for req in
+                parse_requirements(path, options=EmptyOptions(),
+                                   session=PipSession())]
 
 
 def peep_install(argv):
@@ -800,5 +816,27 @@ def main():
         return exc.error_code
 
 
+def exception_handler(exc_type, exc_value, exc_tb):
+    print('Oh no! Peep had a problem while trying to do stuff. Please write up a bug report')
+    print('with the specifics so we can fix it:')
+    print()
+    print('https://github.com/erikrose/peep/issues/new')
+    print()
+    print('Here are some particulars you can copy and paste into the bug report:')
+    print()
+    print('---')
+    print('peep:', repr(__version__))
+    print('python:', repr(sys.version))
+    print('pip:', repr(pip.__version__))
+    print('Command line: ', repr(sys.argv))
+    print(
+        ''.join(traceback.format_exception(exc_type, exc_value, exc_tb)))
+    print('---')
+
+
 if __name__ == '__main__':
-    exit(main())
+    try:
+        exit(main())
+    except Exception as exc:
+        exception_handler(*sys.exc_info())
+        exit(1)

@@ -1,7 +1,7 @@
 # Adding peep so we can track it on requires.io. For packages
 # installation we use peep.py shipped in ./bin
-# sha256: 0E86YzILY1jJTttsgioP3zmaEIQiV-Tnp9wlOYUgkrg
-peep==2.0
+# sha256: D3VN0_wgThq7_XnEfyVZXFqU0kfOWuUrsmmZWqLnmTM
+peep==2.1
 
 # TarGZ
 # sha256: McbDwin4wEs76H5q_DSSkDtX7I8RiKR7auFg2Qz2U8g
