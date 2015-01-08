@@ -49,7 +49,8 @@ django-csp==2.0.3
 # sha256: Qxx4vPgnySoZ14Kc2a55AtUtbfyyPZiQT8gH3eoewHY
 # sha256: S6CrdPp_NPd_8jbuIVdFTRwqrqqiWTI2O_ob5suC29Y
 pytz==2014.9
-
+# sha256: eLAxFrrdDbsu1N7clqSj1CE4uUu4n8Lrmffzvf0Zn1Y
+# sha256: zIrr3sWl-5iZEvFX93s8IaXi8tpiOvkKe0drEGqDSr8
 # sha256: drxjpOLV5aDfd8p9GPD1bixGz7YrcRA7qSqSx5-rHgM
 nose==1.3.4
 
