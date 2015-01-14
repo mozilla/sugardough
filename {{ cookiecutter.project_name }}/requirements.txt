@@ -62,8 +62,9 @@ django-nose==1.3
 # sha256: J7kqegDxYuebWJb-nliXGbmF6c_fRFgmzBiFYVnObB4
 newrelic==2.40.0.34
 
-# sha256: KF6L1zDAtv374jwy0pNr_7pAHyPKsTLocixovoDW8YI
-flake8==2.2.5
+# sha256: yZzJcW1mVdnIvLHndjK4YVvwq9KC16vZ9cIUjK1_xmk
+# sha256: XuGkPM0HFtYGFSHuxpN8mD76AneTAT5XJxLE2lXHyD4
+flake8==2.3.0
 
 # sha256: q409VanEtW-Xy2D21rk92UlUwWEU8K6HLCR6zoI_Fds
 # sha256: jy0vup7228b_a2mm76_Yg1voKHm4rnmkM2HH1k42Pew
