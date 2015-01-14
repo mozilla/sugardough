@@ -3,6 +3,11 @@
 # sha256: D3VN0_wgThq7_XnEfyVZXFqU0kfOWuUrsmmZWqLnmTM
 peep==2.1
 
+# sha256: QW014kelmSc9QP0Bp8pIJmbr2UZ7lYUsqUpV3bzxDuA
+# sha256: 49SRYStWkFJZgEtdIpJhJr7ZoMKoMXSFgrhQUAkgs3A
+# sha256: lZZFTHQINrALhLsuwySDga96cQXWoY_i6BO9GwW6MbE
+peepin==0.7
+
 # sha256: cu3Ue1WudI0p8acdXKS4bnhcn7l0QHzyQrMWjm8bF34
 # sha256: 8ib7iqQ4RWlo1AP2c53hzy2tEo24b2buK0Hf6-NkXFs
 Django==1.7.3
