@@ -1,8 +1,9 @@
 FROM debian:wheezy
-RUN apt-get update && apt-get install -y python python-pip python-dev libpq-dev postgresql-client gettext
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends build-essential python python-pip python-dev libpq-dev postgresql-client gettext
 
 # Using PIL or Pillow? You probably want to uncomment next line
-# RUN apt-get update && apt-get install -y libjpeg8-dev
+# RUN apt-get update && apt-get install -y --no-install-recommends libjpeg8-dev
 
 WORKDIR /app
 
