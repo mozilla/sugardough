@@ -26,12 +26,14 @@ Create a sugardough project
 
 1. Get cookiecutter:
 
-    $ pip install cookiecutter
-
+   ```sh
+   $ pip install cookiecutter
+   ```
 2. Run cookiecutter with sugardough template
 
-    $ cookiecutter https://github.com/mozilla/sugardough
-
+   ```sh
+   $ cookiecutter https://github.com/mozilla/sugardough
+   ```
 3. Done!
 
 
@@ -40,18 +42,47 @@ Cooking sugardough
 
 To contribute to sugardough development:
 
- 1. Clone this repository
- 2. Make your changes in [sugardough](https://github.com/mozilla/sugardough/tree/master/sugardough) directory
- 3. Update [cookiecutter.json](https://github.com/mozilla/sugardough/blob/master/cookiecutter.json) with new variables if needed.
- 4. Delete existing template directory:
-    `$ rm -rf "{{ cookiecutter.project_name }}"`
- 5. Run `./bin/fabricate-cookiecutter.py`
- 6. Git commit changes. Note both "sugardough" and "{{ cookiecutter.project_name }}" directories must be committed.
- 7. Pull request!
+1. Clone this repository
+2. Create a [virtualenv](https://virtualenv.pypa.io/en/latest/).
+3. Install development requirements using pip:
 
-Alternativelly you can use the pre-commit git hook to do steps 4 and 5 automagically every time you commit. Just link `./git-hooks/post-commit` to `./.git/hooks/post-commit`:
+   ```sh
+   $ pip install -r requirements.txt
+   ```
+4. Update the [template directory], and [cookiecutter.json] as well with new
+   variables if needed.
+5. Run the regeneration script that auto-creates a test site:
 
- `$ ln -s ../../git-hooks/post-commit .git/hooks/post-commit`
+   ```sh
+   $ ./bin/regenerate.py
+   ```
+6. Launch the test site to see your changes:
+
+   ```sh
+   $ cd test_project/sugardough
+   $ fig up
+   ```
+6. Git commit changes.
+7. Pull request!
+
+ [template directory]: https://github.com/mozilla/sugardough/tree/master/%7B%7B%20cookiecutter.project_name%20%7D%7D
+ [cookiecutter.json]: https://github.com/mozilla/sugardough/blob/master/cookiecutter.json
+
+The `regenerate.py` command can also watch for changes and auto-regenerate the
+test project:
+
+```sh
+$ ./bin/regenerate.py --watch
+```
+
+If you want the test project to use a different value for a variable than the
+default defined in `cookiecutter.json`, add the value to your
+`~/.cookiecutterrc` file:
+
+```
+default_context:
+    project_name: "Foo Bar"
+```
 
 
 Opinions

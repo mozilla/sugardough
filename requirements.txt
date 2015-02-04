@@ -1,0 +1,4 @@
+cookiecutter
+watchdog
+docopt
+tox
