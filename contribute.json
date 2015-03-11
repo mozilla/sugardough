@@ -1,0 +1,25 @@
+{
+    "name": "sugardough",
+    "description": "A Cookiecutter template for a web application based on Django.",
+    "repository": {
+        "url": "https://github.com/mozilla/sugardough/",
+        "license": "Apache 2.0",
+        "tests": "https://travis-ci.org/mozilla/sugardough"
+    },
+    "participate": {
+        "home": "https://github.com/mozilla/sugardough/",
+        "docs": "https://github.com/mozilla/sugardough/#cooking-sugardough",
+        "irc": "irc://irc.mozilla.org/#webdev",
+        "irc-contacts": ["giorgos", "pmac", "peterbe", "Osmose"]
+    },
+    "bugs": {
+        "list": "https://github.com/mozilla/sugardough/issues",
+        "report": "https://github.com/mozilla/sugardough/issues/new"
+    },
+    "keywords": [
+        "django",
+        "python",
+        "jinja",
+        "docker"
+    ]
+}
