@@ -107,3 +107,8 @@ For test coverage you'll also have to add `pytest-cov`.
 Next you'll need to edit the `.travis.yml` file and edit the script part.
 Instead of `coverage run manage.py test` it
 `py.test --cov=sugardough`.
+
+License
+-------
+
+Sugardough itself is licensed under the [Apache 2 license](http://www.apache.org/licenses/LICENSE-2.0). See the [LICENSE](LICENSE) file in this repository for the full text of the license. The website projects produced using sugardough use the [Mozilla Public License version 2](https://www.mozilla.org/MPL/2.0/) by default.
