@@ -70,6 +70,18 @@ newrelic==2.40.0.34
 # sha256: 0mqdAlLan4Mbgne4JJYbsQsfnXn0dS0y5IFLe80eCJs
 flake8==2.4.0
 
+# sha256: SqEp342QB7GSv4IBP0FVM5lGUtfKqTDQAmh-tCpsKkE
+# sha256: uLfjVjC1U54moZffxgBb6eHpoTVJazd3I6jrwBuby_8
+pep8==1.6.2
+
+# sha256: rEVxaVwQzhU2vNuhopS58tPmzJ0OoXG2fVCghkzj4EI
+# sha256: P6gKELNtUWhr93RPXcmWIs1cmM6O1kAi5imGiq_Bd2k
+pyflakes==0.8.1
+
+# sha256: ic9r9P9kT_i5EuL6fiq7aNV6jn6Rjjk8coQNMNLrzws
+# sha256: PYypv2XFAU9GkYBUTR3Vu1ud9wmq1jBPnC5DcK4Ke3w
+mccabe==0.3
+
 # sha256: 9WaHQjOU18jXr8lhEuT31usl1zancza3sYqwnpscDNI
 # sha256: 4J4tQ_7ka9T7TiHCP-clhdw8NDcHMCf_iXYJ3Vt1dLw
 # sha256: hgcBQREBAba1Xm3DGkBGHEN9ORpTN6bl40k1fcGL-7Q
