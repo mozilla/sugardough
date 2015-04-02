@@ -6,7 +6,7 @@ build using [Cookiecutter](https://github.com/audreyr/cookiecutter).
 
 Features:
  * Django settings with environment variables, using [Decouple](https://github.com/henriquebastos/python-decouple)
- * [Jinja2](http://jinja.pocoo.org/) template engine with [Jingo](http://jingo.readthedocs.org/)
+ * [Jinja2](http://jinja.pocoo.org/) template engine
  * [Whitenoise](http://whitenoise.evans.io/)
  * [Docker](https://docker.io/) ready, plus [Fig](http://fig.sh/) support.
  * Sane [Flake8](http://flake8.readthedocs.org/en/2.2.3/) configuration.
@@ -94,11 +94,6 @@ Opinions
 edit the generated `requirements.txt` file and remove the lines about
 `psycopg2` then use `peep` to add the version of `MySQL-python` you want to
 use. You will also need to edit the `.travis.yml` file accordingly.
-
-* If you don't want to use **Jinja2**, remove the lines about `jingo`,
-`MarkupSafe` and `Jinja2` in the `requirements.txt` file. You will
-also need to edit the file `settings/base.py` and remove the
-`TEMPLATE_LOADERS` setting.
 
 * if you want to use **pytest**  add in requirements.txt `pytest`, `py`,
 `cov-core` and `pytest-django`.
