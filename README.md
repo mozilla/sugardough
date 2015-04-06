@@ -100,13 +100,13 @@ use. You will also need to edit the `.travis.yml` file accordingly.
 also need to edit the file `settings/base.py` and remove the
 `TEMPLATE_LOADERS` setting.
 
-* if you want to use **pytest instead of nose**, remove `nose` and
-`django-nose` from `requirements.txt` then add in `pytest`, `py`,
-`cov-core` and `pytest-django` instead.
+* if you want to use **pytest**  add in requirements.txt `pytest`, `py`,
+`cov-core` and `pytest-django`.
 For test coverage you'll also have to add `pytest-cov`.
 Next you'll need to edit the `.travis.yml` file and edit the script part.
 Instead of `coverage run manage.py test` it
 `py.test --cov=sugardough`.
+
 
 License
 -------

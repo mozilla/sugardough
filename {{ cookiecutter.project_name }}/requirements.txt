@@ -54,14 +54,6 @@ django-csp==2.0.3
 # sha256: k_gRIthpg8uwVs0Syn3jnXYLbz4wYOQ-_1xeIDRRb6I
 pytz==2015.2
 
-# sha256: eLAxFrrdDbsu1N7clqSj1CE4uUu4n8Lrmffzvf0Zn1Y
-# sha256: zIrr3sWl-5iZEvFX93s8IaXi8tpiOvkKe0drEGqDSr8
-# sha256: drxjpOLV5aDfd8p9GPD1bixGz7YrcRA7qSqSx5-rHgM
-nose==1.3.4
-
-# sha256: NmfSakH-wwNkoO9yWAgyylMogC1VP21ucq9awhyzY2U
-django-nose==1.3
-
 # sha256: J7kqegDxYuebWJb-nliXGbmF6c_fRFgmzBiFYVnObB4
 newrelic==2.40.0.34
 

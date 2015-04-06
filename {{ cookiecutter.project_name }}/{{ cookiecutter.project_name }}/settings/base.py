@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     '{{ cookiecutter.project_name }}.base',
 
     # Third party apps
-    'django_nose',
 
     # Django apps
     'django.contrib.admin',
@@ -135,5 +134,3 @@ CSP_STYLE_SRC = (
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
-
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
