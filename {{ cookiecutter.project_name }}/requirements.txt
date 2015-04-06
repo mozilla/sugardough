@@ -98,3 +98,6 @@ docutils==0.12
 # sha256: Xe0vqQlP19_rPakmNkCf1wKg0H1gYoNQTX7gRAHO5cs
 # sha256: cyCRkITm2sj0VAY4pGRHo71zD8oXKvwX0sA-7SLPT1E
 Pygments==2.0.2
+
+# sha256: 3w1cLeq8MzdfKIx6tUYuBsbs2CTs-ie_qLzV5Mz7Nyo
+django-jinja==1.3.3
