@@ -33,8 +33,8 @@ at the top of this file to point to your own travis and coveralls accounts.
 Docker for development
 ----------------------
 
-0. Make sure you have [docker](https://docker.io) and [fig](https://pypi.python.org/pypi/fig)
-1. fig up
+0. Make sure you have [docker](https://docker.io) and [docker-compose](https://github.com/docker/compose)
+1. docker-compose up
 
 
 Docker for deploying to production
