@@ -102,6 +102,9 @@ Next you'll need to edit the `.travis.yml` file and edit the script part.
 Instead of `coverage run manage.py test` it
 `py.test --cov=sugardough`.
 
+* Dockerfile uses Python 3. If you want Python 2 change line 'FROM python:3-slim'
+ to 'FROM python:2-slim'
+
 
 License
 -------
