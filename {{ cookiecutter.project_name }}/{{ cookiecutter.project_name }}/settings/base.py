@@ -26,8 +26,6 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-TEMPLATE_DEBUG = config('DEBUG', default=DEBUG, cast=bool)
-
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
@@ -38,7 +36,7 @@ INSTALLED_APPS = [
     '{{ cookiecutter.project_name }}.base',
 
     # Third party apps
-    'django_nose',
+    'django_jinja',
 
     # Django apps
     'django.contrib.admin',
@@ -100,11 +98,32 @@ MEDIA_URL = config('MEDIA_URL', '/media/')
 
 SESSION_COOKIE_SECURE = config('SESSION_COOKIE_SECURE', default=not DEBUG, cast=bool)
 
-TEMPLATE_LOADERS = (
-    'jingo.Loader',
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-)
+TEMPLATES = [
+    {
+        "BACKEND": "django_jinja.backend.Jinja2",
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "match_regex": r"^(?!admin/.*)",
+            "match_extension": '.html',
+            "newstyle_gettext": True,
+        }
+    },
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "APP_DIRS": True,
+        "OPTIONS": {
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.debug',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.template.context_processors.tz',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        }
+    },
+]
 
 # Django-CSP
 CSP_DEFAULT_SRC = (
@@ -135,5 +154,3 @@ CSP_STYLE_SRC = (
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
-
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
