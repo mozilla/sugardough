@@ -35,6 +35,9 @@
       <h1>mozilla webdev</h1>
     </header>
     It works! Now build something.
+    {% raw %}
+      {% csrf_token %}
+    {% endraw %}
     <footer>
       {% raw %}
         {{ thisyear() }}
