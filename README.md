@@ -37,8 +37,8 @@ Create a sugardough project
 3. Done!
 
 
-Cooking sugardough
-------------------
+Contribute to sugardough
+------------------------
 
 To contribute to sugardough development:
 
