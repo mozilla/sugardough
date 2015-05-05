@@ -8,7 +8,7 @@ Features:
  * Django settings with environment variables, using [Decouple](https://github.com/henriquebastos/python-decouple)
  * [Jinja2](http://jinja.pocoo.org/) template engine
  * [Whitenoise](http://whitenoise.evans.io/)
- * [Docker](https://docker.io/) ready, plus [Fig](http://fig.sh/) support.
+ * [Docker](https://docker.io/) ready, plus [Docker Compose](https://github.com/docker/compose) support.
  * Sane [Flake8](http://flake8.readthedocs.org/en/2.2.3/) configuration.
  * [NewRelic](https://newrelic.com/) ready.
  * [Travis-CI](http://travis-ci.org/) ready.
@@ -60,7 +60,7 @@ To contribute to sugardough development:
 
    ```sh
    $ cd test_project/sugardough
-   $ fig up
+   $ docker-compose up
    ```
 6. Git commit changes.
 7. Pull request!
