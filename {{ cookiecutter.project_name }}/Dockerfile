@@ -4,8 +4,7 @@ EXPOSE 80
 CMD ["./bin/run-prod.sh"]
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential libpq-dev postgresql-client gettext && \
-    apt-get remove mysql-common -y && apt-get autoremove -y && \
+    apt-get install -y --no-install-recommends build-essential python-dev libpq-dev postgresql-client gettext && \
     rm -rf /var/lib/apt/lists/*
 
 # Using PIL or Pillow? You probably want to uncomment next line
