@@ -44,7 +44,14 @@ Docker for deploying to production
 2. Prepare a 'env' file with all the variables needed by dev, stage or production.
 3. Run the image:
 
-    docker run --env-file env -p 80:80 mozilla/{{ cookiecutter.project_name }}
+    docker run --env-file env -p 80:8000 mozilla/{{ cookiecutter.project_name }}
+
+Heroku
+------
+1. heroku create
+2. heroku config:set DEBUG=False ALLOWED_HOSTS=<foobar>.herokuapp.com, SECRET_KEY=something_secret
+   DATABASE_URL gets populated by heroku once you setup a database.
+3. git push heroku master
 
 
 NewRelic Monitoring

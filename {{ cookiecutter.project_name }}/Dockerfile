@@ -1,6 +1,6 @@
 FROM python:3-slim
 
-EXPOSE 80
+EXPOSE 8000
 CMD ["./bin/run-prod.sh"]
 
 RUN apt-get update && \
@@ -19,3 +19,4 @@ COPY requirements.txt /app/requirements.txt
 RUN ./bin/peep.py install -r requirements.txt
 
 COPY . /app
+RUN DEBUG=False SECRET_KEY=foo ALLOWED_HOSTS=localhost, DATABASE_URL= ./manage.py collectstatic --noinput -c
