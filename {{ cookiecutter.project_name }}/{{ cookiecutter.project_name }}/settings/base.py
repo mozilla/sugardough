@@ -142,25 +142,29 @@ CSP_DEFAULT_SRC = (
 CSP_FONT_SRC = (
     "'self'",
     'http://*.mozilla.net',
-    'https://*.mozilla.net'
+    'https://*.mozilla.net',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
 )
 CSP_IMG_SRC = (
     "'self'",
     'http://*.mozilla.net',
     'https://*.mozilla.net',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
 )
 CSP_SCRIPT_SRC = (
     "'self'",
-    'http://www.mozilla.org',
-    'https://www.mozilla.org',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
 CSP_STYLE_SRC = (
     "'self'",
     "'unsafe-inline'",
-    'http://www.mozilla.org',
-    'https://www.mozilla.org',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
