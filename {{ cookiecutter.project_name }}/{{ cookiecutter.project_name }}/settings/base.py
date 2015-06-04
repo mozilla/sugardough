@@ -107,6 +107,15 @@ TEMPLATES = [
             'match_regex': r'^(?!!(admin|registration)/.*)',
             'match_extension': '.html',
             'newstyle_gettext': True,
+            'context_processors': [
+                '{{ cookiecutter.project_name }}.base.helpers.settings',
+            ],
+            'filters': {
+                'urlparams': '{{ cookiecutter.project_name }}.base.helpers.urlparams',
+            },
+            'globals': {
+                'thisyear': '{{ cookiecutter.project_name }}.base.helpers.thisyear',
+            },
         }
     },
     {
