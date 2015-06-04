@@ -19,7 +19,8 @@ WORKDIR /app
 # docker caching.
 COPY ./bin/peep.py /app/bin/peep.py
 COPY requirements.txt /app/requirements.txt
-RUN ./bin/peep.py install -r requirements.txt
+# Pin a known to work with peep pip version.
+RUN pip install pip==6.1.1 && ./bin/peep.py install -r requirements.txt
 
 USER webdev
 COPY . /app
