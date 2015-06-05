@@ -17,7 +17,7 @@ def settings(request):
 
 def thisyear():
     """The current year."""
-    return jinja2.Markup(datetime.date.today().year)
+    return datetime.date.today().year
 
 
 def urlparams(url_, hash=None, **query):
