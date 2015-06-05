@@ -2,24 +2,17 @@ import datetime
 import urllib
 import urlparse
 
-import jinja2
-from django.conf import settings as django_settings
+from django_jinja import library
 from django.utils.encoding import smart_str
 
 
-def settings(request):
-    """
-    Adds static-related context variables to the context.
-
-    """
-    return {'settings': django_settings}
-
-
+@library.global_function
 def thisyear():
     """The current year."""
     return datetime.date.today().year
 
 
+@library.filter
 def urlparams(url_, hash=None, **query):
     """Add a fragment and/or query paramaters to a URL.
     New query params will be appended to exising parameters, except duplicate

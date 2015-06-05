@@ -108,14 +108,8 @@ TEMPLATES = [
             'match_extension': '.html',
             'newstyle_gettext': True,
             'context_processors': [
-                '{{ cookiecutter.project_name }}.base.helpers.settings',
+                '{{ cookiecutter.project_name }}.base.context_processors.settings',
             ],
-            'filters': {
-                'urlparams': '{{ cookiecutter.project_name }}.base.helpers.urlparams',
-            },
-            'globals': {
-                'thisyear': '{{ cookiecutter.project_name }}.base.helpers.thisyear',
-            },
         }
     },
     {
