@@ -109,6 +109,7 @@ TEMPLATES = [
             'newstyle_gettext': True,
             'context_processors': [
                 '{{ cookiecutter.project_name }}.base.context_processors.settings',
+                '{{ cookiecutter.project_name }}.base.context_processors.i18n',
             ],
         }
     },
