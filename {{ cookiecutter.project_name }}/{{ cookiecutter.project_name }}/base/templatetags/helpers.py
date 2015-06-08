@@ -1,5 +1,8 @@
 import datetime
-import urlparse
+try:
+    import urllib.parse as urlparse
+except ImportError:
+    import urlparse
 
 from django_jinja import library
 from django.utils.http import urlencode
