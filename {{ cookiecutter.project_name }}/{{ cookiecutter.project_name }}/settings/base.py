@@ -101,18 +101,22 @@ SESSION_COOKIE_SECURE = config('SESSION_COOKIE_SECURE', default=not DEBUG, cast=
 
 TEMPLATES = [
     {
-        "BACKEND": "django_jinja.backend.Jinja2",
-        "APP_DIRS": True,
-        "OPTIONS": {
-            "match_regex": r"^(?!admin/.*)",
-            "match_extension": '.html',
-            "newstyle_gettext": True,
+        'BACKEND': 'django_jinja.backend.Jinja2',
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'match_regex': r'^(?!!(admin|registration)/.*)',
+            'match_extension': '.html',
+            'newstyle_gettext': True,
+            'context_processors': [
+                '{{ cookiecutter.project_name }}.base.context_processors.settings',
+                '{{ cookiecutter.project_name }}.base.context_processors.i18n',
+            ],
         }
     },
     {
-        "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "APP_DIRS": True,
-        "OPTIONS": {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'APP_DIRS': True,
+        'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.debug',
@@ -133,25 +137,29 @@ CSP_DEFAULT_SRC = (
 CSP_FONT_SRC = (
     "'self'",
     'http://*.mozilla.net',
-    'https://*.mozilla.net'
+    'https://*.mozilla.net',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
 )
 CSP_IMG_SRC = (
     "'self'",
     'http://*.mozilla.net',
     'https://*.mozilla.net',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
 )
 CSP_SCRIPT_SRC = (
     "'self'",
-    'http://www.mozilla.org',
-    'https://www.mozilla.org',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
 CSP_STYLE_SRC = (
     "'self'",
     "'unsafe-inline'",
-    'http://www.mozilla.org',
-    'https://www.mozilla.org',
+    'http://*.mozilla.org',
+    'https://*.mozilla.org',
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
