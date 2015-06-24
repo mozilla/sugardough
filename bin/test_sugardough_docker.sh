@@ -7,7 +7,7 @@ set -ex
 ENVDIR=`mktemp -d`
 virtualenv $ENVDIR
 . $ENVDIR/bin/activate
-pip install cookiecutter docker-compose
+pip install cookiecutter docker-compose==1.2.0
 
 TDIR=`mktemp -d`
 cp cookiecutter.json $TDIR/
