@@ -7,6 +7,7 @@ peep==2.4.1
 # sha256: zpqSSG7aW_PZ5Ah_gCSSsVtxsGuJTWgM-Wb1wnlD5TI
 # sha256: m7S7kSEJqteivOjiKGp9mgnrzKrv5Br4VYZrZgcVkGA
 peepin==0.11
+
 # sha256: BH0PTJMmKzOAEEmi3N2u8Jwp50HAOpR6NVbqR0ju0uI
 # sha256: K7ZU_MBf1TAXyIyvK8OLXF6iPJH4rH8KKLKQ2vIwW7o
 Django==1.8.3
@@ -14,8 +15,9 @@ Django==1.8.3
 # sha256: 8uJz7TSsu1YJYtXPEpF5NtjfAil98JvTCJuFRtRYQTg
 # sha256: ygF2j97N4TQwHzFwdDIm9g7f9cOTXxJDc3jr2RFQY1M
 dj-database-url==0.3.0
-# sha256: wAr-yzAqmaT4PeybBVxNHMGWkm1iyNsBXWhDLfgRjKg
-psycopg2==2.6
+
+# sha256: as-au751fvddwuzZ2RunSVR5Qauv--af8ghqnjfUkEw
+psycopg2==2.6.1
 
 # sha256: ufv3R_qOcR0zDy9Da5suz17tnrZ6Y3yoGrzRHCq-3sg
 python-decouple==2.3
@@ -30,9 +32,9 @@ MarkupSafe==0.23
 # sha256: i8g1CCiCrZoBLNeQxGABHk2WvzUS2YoE09q75FOToIk
 gunicorn==19.3.0
 
-# sha256: Pk2AGZlglZuCiVGqJMv6o2zr7RSdzXKMEehVeYsV-HA
-# sha256: 2slBnbPs4nu1PHQzJD_CLtQs9o3p1sQSk5Dh2a7-YxA
-whitenoise==1.0.6
+# sha256: VYVza7U0XcnLcEwSkq997IUSZmqw-RbG8mduDwYCMeg
+# sha256: kpfCKE84KWGnvdmJeFlixWKX1HYUJT57vdglG2nUrOQ
+whitenoise==2.0.2
 
 # sha256: 0yV2uq13_dnmhZvpfCtqPBem9IQ2Q4nbcx8Gl7ehlmE
 django-csp==2.0.3
@@ -51,8 +53,8 @@ django-csp==2.0.3
 # sha256: APNfsOfi_DSM0JHSXTbGdotyFGPRI5bWipSRqKX5Hs8
 pytz==2015.4
 
-# sha256: _d1HqNBI4MX0Lu5RGoqvNYkcmW1slZVTx77Is6x0s8s
-newrelic==2.50.0.39
+# sha256: WbUVu327zdMH-BesOIVOgIOev6M8XbeX9lRQeTyUXA0
+newrelic==2.52.0.40
 
 # sha256: j8ToZaKfPG7K5AGn3OGCR_ir0EbSTjkOFq-Zdsyceqg
 # sha256: Ln675Z2MheYm422Z8NsvV4OUMT0_fOncnx2lfvbNdTc
@@ -62,19 +64,19 @@ flake8==2.4.1
 # sha256: uLfjVjC1U54moZffxgBb6eHpoTVJazd3I6jrwBuby_8
 pep8==1.6.2
 
-# sha256: dj5txzU56Qut_bb0dtcfxoq8jvVys-8gIt3JzGuuxMM
-# sha256: TE1zCFzl3p2BRwEcBg0Sllm6oREdGlowNfK9A_KXZTg
-pyflakes==0.9.0
+# sha256: Bd9YSinu6poqIRDdNi5T0E4MS7F1S01xI09lGRfzwvA
+# sha256: AmkcI85pnyUodLfCfxTPJuPU6CtY5dWE8AC3q1vjal8
+pyflakes==0.9.2
 
-# sha256: ic9r9P9kT_i5EuL6fiq7aNV6jn6Rjjk8coQNMNLrzws
-# sha256: PYypv2XFAU9GkYBUTR3Vu1ud9wmq1jBPnC5DcK4Ke3w
-mccabe==0.3
+# sha256: vWwID7NyrrywzhnjXdrHRPKr9ae--iB9stEJfUjv5jo
+# sha256: X36m-zqpr-FG0H_W1c7feIdH2LDCnkRzJFPCstsePRY
+mccabe==0.3.1
 
-# sha256: wljQ9eN7NXVUb71AEDajlghC1dmCJJ_YllqoBumklO8
-# sha256: -LvtFfiAmz4iQVfklWfs9pGCfxlA34U2TsTKcnf5irY
-# sha256: UyCS0_BvgrHY0eXDcJfq4Z_PAl-PaktnDdScPDONViQ
-# sha256: 6V3rF2G6uP7Jpd6rgFtBlsHawO20mNnq96sxq1-VWHo
-ipython==3.1.0
+# sha256: VkWzEfLrzStU3NmTwLatLrXK2Q9fL-PUXBhMhD9E1Ac
+# sha256: 5nkMaUKPpsPg5NYz4mrReJcORouv_gOphikFS9uEMI4
+# sha256: jmS0QeFimMCAJbgmEmste8XBd20tLwcWchZvYV8yeIc
+# sha256: MfXU5lrA5yp-r8Mey5WrfJgbtJ7TFLaTEbykXGq4-ss
+ipython==3.2.0
 
 # sha256: F2PRVkET9euJ33eHmo0yEyc8TX_5Pcs3owcM3ww0_Xw
 ipdb==0.8.1
