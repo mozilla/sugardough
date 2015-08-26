@@ -104,8 +104,7 @@ TEMPLATES = [
         'BACKEND': 'django_jinja.backend.Jinja2',
         'APP_DIRS': True,
         'OPTIONS': {
-            'match_regex': r'^(?!(admin|registration)/.*)',
-            'match_extension': '.html',
+            'match_extension': '.jinja',
             'newstyle_gettext': True,
             'context_processors': [
                 '{{ cookiecutter.project_name }}.base.context_processors.settings',
