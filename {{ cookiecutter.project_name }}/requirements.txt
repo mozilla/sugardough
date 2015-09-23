@@ -104,3 +104,6 @@ Pygments==2.0.2
 
 # sha256: b0wujFraFwOf8cHji8Ub6pMXrzZ24oRmFIyN9fx48TI
 django-jinja==1.4.1
+
+# sha256: RORjnsBXprap3duGnU46SBj8knjsSQzOOa7whEBZKpM
+django-session-csrf==0.5
