@@ -6,4 +6,4 @@ class HomeTests(TestCase):
 
     def test_base(self):
         response = self.client.get(reverse('home'))
-        assert 'csrfmiddlewaretoken' in response.content
+        assert b'csrfmiddlewaretoken' in response.content
