@@ -1,5 +1,7 @@
 {
     "project_name": "sugardough",
+    "project_description": "Add your project description",
     "project_db": "sugardough_db",
-    "project_author": "Mozilla Foundation"
+    "project_author": "Mozilla Foundation",
+    "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '') }}"
 }
