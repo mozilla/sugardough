@@ -1,0 +1,9 @@
+{
+  "name": "{{ cookiecutter.project_name }}",
+  "description": "{{ cookiecutter.project_description }}",
+  "repository": {
+    "url": "https://github.com/mozilla/{{ cookiecutter.repo_name }}/",
+    "license": "MPL 2.0",
+    "tests": "https://travis-ci.org/mozilla/{{ cookiecutter.repo_name }}/"
+  }
+}
