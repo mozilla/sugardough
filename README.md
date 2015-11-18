@@ -18,8 +18,12 @@ Features:
  * [session-csrf](https://github.com/mozilla/django-session-csrf) included.
 
 [![Requirements Status](https://img.shields.io/requires/github/mozilla/sugardough.svg)](https://requires.io/github/mozilla/sugardough/requirements/?branch=master)
+
+Virtualenv
 [![Build Status](https://img.shields.io/travis/mozilla/sugardough/master.svg)](https://travis-ci.org/mozilla/sugardough)
-[![Coverage status](https://img.shields.io/coveralls/mozilla/sugardough/master.svg)](https://coveralls.io/r/mozilla/sugardough)
+Docker
+[![Build Status](https://ci.us-west.moz.works/buildStatus/icon?job=sugardough)](https://ci.us-west.moz.works/job/sugardough)
+
 
 
 Create a sugardough project
