@@ -1,5 +1,5 @@
 db:
-  image: postgres:9.3
+  image: postgres:9.4
 web:
   build: .
   ports:

@@ -2,7 +2,7 @@ language: python
 python:
   - "2.7"
 addons:
-  postgresql: "9.3"
+  postgresql: "9.4"
 before_script:
   - createdb {{ cookiecutter.project_db }}
 install:
