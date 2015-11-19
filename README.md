@@ -107,8 +107,15 @@ Next you'll need to edit the `.travis.yml` file and edit the script part.
 Instead of `coverage run manage.py test` it
 `py.test --cov=sugardough`.
 
-* Dockerfile uses Python 3. If you want Python 2 change line 'FROM python:3-slim'
- to 'FROM python:2-slim'
+* Dockerfile uses Python 3. If you want Python 2 change the following line
+  ```bash
+  apt-get install -y --no-install-recommends build-essential python3 python3-dev python3-pip \
+  ```
+  to
+  ```bash
+  apt-get install -y --no-install-recommends build-essential python python-dev python-pip
+  ```
+  and remove the next two lines starting with `RUN update-alternatives`.
 
 
 License
