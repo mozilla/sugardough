@@ -165,3 +165,6 @@ CSP_STYLE_SRC = (
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
+
+# This is needed to get a CRSF token in /admin
+ANON_ALWAYS = True
