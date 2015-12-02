@@ -8,9 +8,9 @@ peep==2.4.1
 # sha256: m7S7kSEJqteivOjiKGp9mgnrzKrv5Br4VYZrZgcVkGA
 peepin==0.11
 
-# sha256: j7aT7P5M1v-a4xNv8KHqpKyuAa8ie7geZG3CutMpXM8
-# sha256: F6Zt5c9Zte6Bw9xXYJsUW7Ra3dwNwGk3uZhZfW57RSM
-Django==1.8.7
+# sha256: 5m1Yv-7TpetE8q9tXxtqhdZWxBgOu6Y7aS5Y0p2ypxY
+# sha256: 47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU
+Django==1.9
 
 # sha256: 8uJz7TSsu1YJYtXPEpF5NtjfAil98JvTCJuFRtRYQTg
 # sha256: ygF2j97N4TQwHzFwdDIm9g7f9cOTXxJDc3jr2RFQY1M
