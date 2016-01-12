@@ -12,7 +12,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', '{{ cookiecutter.project_name }}
 from django.conf import settings
 from django.core.wsgi import get_wsgi_application
 
-import newrelic
+import newrelic.agent
 from decouple import config
 from whitenoise.django import DjangoWhiteNoise
 
