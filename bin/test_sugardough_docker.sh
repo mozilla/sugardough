@@ -21,7 +21,7 @@ DC_CMD="docker-compose --project-name $PROJECT_NAME"
 $DC_CMD run -T web flake8 sugardough
 
 # Wait for database
-$DC_CMD run -d db
+$DC_CMD up -d db
 while true;
 do
     CMD="docker run --link ${PROJECT_NAME}_db_1:db multicloud/netcat -z db 5432"
