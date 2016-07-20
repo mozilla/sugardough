@@ -5,9 +5,9 @@ hashin==0.6.0 \
 argparse==1.4.0 \
     --hash=sha256:c31647edb69fd3d465a847ea3157d37bed1f95f19760b11a47aa91c04b666314 \
     --hash=sha256:62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4
-Django==1.9.7 \
-    --hash=sha256:74676acbe69964f3aabfe5eb8697a2c82e6095d3fab57589eaab962a98575f58 \
-    --hash=sha256:2b29e81c8c32b3c0d9a0119217416887c480d927ae2630bada2da83078c93bf6
+Django==1.9.8 \
+    --hash=sha256:e50c8d4653433413d26ecf25a84ccdcb9c7eac7cd1bb36eed4cd89c71f43064e \
+    --hash=sha256:b9806e0d598fd04b29b8ef35aea8c9308b3803c3ce8adab4d342db9cdfd42dfb
 dj-database-url==0.4.1 \
     --hash=sha256:7f4c78d2a090df8dfaf56d5d3ff7bbee17360436e4879558317e2314424864cd
 psycopg2==2.6.1 \
