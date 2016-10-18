@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import sys
 
 import dj_database_url
 from decouple import Csv, config
@@ -53,6 +54,7 @@ for app in config('EXTRA_APPS', default='', cast=Csv()):
 
 
 MIDDLEWARE_CLASSES = (
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -168,3 +170,27 @@ CSP_STYLE_SRC = (
 
 # This is needed to get a CRSF token in /admin
 ANON_ALWAYS = True
+
+# A boolean that specifies whether to use the X-Forwarded-Host header in
+# preference to the Host header. This should only be enabled if a proxy which
+# sets this header is in use.
+USE_X_FORWARDED_HOST = config('USE_X_FORWARDED_HOST', default=False, cast=bool)
+
+# When DEBUG is True, allow HTTP traffic, otherwise, never allow HTTP traffic.
+SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', default=not DEBUG, cast=bool)
+SECURE_HSTS_SECONDS = config('SECURE_HSTS_SECONDS', default='31536000', cast=int)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = config('SECURE_HSTS_INCLUDE_SUBDOMAINS', default=False, cast=bool)
+SECURE_BROWSER_XSS_FILTER = config('SECURE_BROWSER_XSS_FILTER', default=True, cast=bool)
+SECURE_CONTENT_TYPE_NOSNIFF = config('SECURE_CONTENT_TYPE_NOSNIFF', default=True, cast=bool)
+
+# If the web server in front of Django terminates SSL
+# 1. Make sure the server strips X-Forwarded-Proto header from all incoming requests.
+# 2. Sets X-Forwarded-Proto header only for HTTPS request and sends it to Django.
+# 3. Uncomment the following line
+# See also https://docs.djangoproject.com/en/1.9/ref/settings/#secure-proxy-ssl-header
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+
+# This is the bottom of settings.py
+if 'test' in sys.argv[1:2]:
+    SECURE_SSL_REDIRECT = False
