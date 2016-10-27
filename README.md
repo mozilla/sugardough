@@ -2,7 +2,7 @@ Sugardough
 ==========
 
 Sugardough is a web application template based on Django. Sugardough is
-build using [Cookiecutter](https://github.com/audreyr/cookiecutter).
+built using [Cookiecutter](https://github.com/audreyr/cookiecutter).
 
 Features:
  * Django settings with environment variables, using [Decouple](https://github.com/henriquebastos/python-decouple)
