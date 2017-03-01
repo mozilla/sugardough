@@ -167,6 +167,7 @@ CSP_STYLE_SRC = (
     'http://*.mozilla.net',
     'https://*.mozilla.net',
 )
+CSP_REPORT_ONLY = config('CSP_REPORT_ONLY', default=False)
 
 # This is needed to get a CRSF token in /admin
 ANON_ALWAYS = True
