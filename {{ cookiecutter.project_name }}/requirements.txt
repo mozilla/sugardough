@@ -83,3 +83,6 @@ enum34==1.1.6 \
     --hash=sha256:2d81cbbe0e73112bdfe6ef8576f2238f2ba27dd0d55752a776c41d38b7da2850
 configparser==3.5.0 \
     --hash=sha256:5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a
+urlwait==0.4 \
+    --hash=sha256:fc39ff2c8abbcaad5043e1f79699dcb15a036cc4b0ff4d1aa825ea105d4889ff \
+    --hash=sha256:395fc0c2a7f9736858a2c2f449aa20c6e9da1f86bfc2d1fda4f2f5b78a5c115a
