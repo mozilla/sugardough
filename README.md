@@ -1,6 +1,8 @@
 Sugardough
 ==========
 
+**Sugardough is not activelly maintained and packages are out of date and insecure.**
+
 Sugardough is a web application template based on Django. Sugardough is
 built using [Cookiecutter](https://github.com/audreyr/cookiecutter).
 
